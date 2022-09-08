@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "title": "个人项目展示——Echart大数据可视化",
+      "body": "echartPractive",
+      "id": 1,
+      "tags": [
+        "HTME/CSS/JS",
+        "Echarts",
+        "大数据可视化"
+      ]
+    },
+    {
+      "title": "个人项目展示——vue3+ts电商管理系统",
+      "body": "vueTsPractive",
+      "id": 2,
+      "tags": [
+        "vue3",
+        "ts",
+        "电商管理平台"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "简版个人博客搭建",
+      "body": "计划了好久也没实践，先做一个简单版本的，vue3框架，json-serve模拟数据请求",
+      "tags": [
+        "vue3",
+        "json-serve"
+      ]
+    },
+    {
+      "title": "HTML学习笔记",
+      "body": "记录一下HTML学习的笔记，准备秋招完之后从头再来一遍",
+      "id": 4,
+      "tags": [
+        "HTML"
+      ]
+    }
+  ]
+}
