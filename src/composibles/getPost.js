@@ -7,7 +7,7 @@ const getPost = (id) => {
 
     const load = async () => {
         try {
-            let {data} = await axios("http://localhost:3030/posts/" + id)
+            let {data} = await axios("http://49.232.88.154:3030/posts/" + id)
             post.value = data
         } catch(error){
             console.log(error)
