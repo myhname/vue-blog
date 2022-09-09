@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: 安装node.js
-        uses: actions/setup@v1
+        uses: actions/setup-node@v1
         with:
           node-version: 14.0.0
 
