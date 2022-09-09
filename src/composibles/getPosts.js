@@ -7,7 +7,7 @@ const getPosts = () => {
 
     const load = async () => {
         try {
-            let {data} = await axios("http://localhost:3000/posts")
+            let {data} = await axios("http://localhost:3030/posts")
             postls.value = data
         } catch(error){
             console.log(error)

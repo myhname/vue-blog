@@ -13,7 +13,7 @@
 
 * HTML/CSS/JS
 * vue3
-* json-server模拟数据
+* json-server模拟数据 端口3030
 
 ## 补充
 

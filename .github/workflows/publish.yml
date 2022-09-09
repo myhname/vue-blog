@@ -1,0 +1,31 @@
+name: 打包应用并上传腾讯云
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 签出代码
+        uses: actions/checkout@master
+
+      - name: 安装node.js
+        uses: anctions/steup@v1
+        with:
+          node-version: 14.0.0
+
+      - name: 打包
+        run: npm run build
+
+      - name: 发布到腾讯云
+        uses: easingthemes/ssh-deploy@v2.2.11
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          ARGS: "-avzr --delete"
+          SOURCE: "dist"
+          REMOTE_HOST: "49.232.88.154"
+          REMOTE_USER: "myh"
+          TARGET: "/home/myh/vue-blog"
